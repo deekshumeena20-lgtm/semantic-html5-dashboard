@@ -1,22 +1,65 @@
-# Accessible Components
+# Semantic HTML5 & Accessible Component Architecture
 
-This directory documents the reusable dashboard components.
+## Project Overview
+An enterprise dashboard developed using semantic HTML5, accessible components, and WCAG 2.1 accessibility principles.
 
-## Components
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- ARIA
+- W3C HTML Validator
 
-1. Header – Main navigation.
-2. Sidebar – Dashboard navigation.
-3. Modal – Accessible information dialog.
-4. Form – Accessible user registration form.
+## Features
+- Multi-page dashboard layout
+- Semantic navigation header and sidebar
+- Main content sections
+- Accessible data tables
+- User registration form
+- HTML dialog modal
+- Responsive CSS design
+- Keyboard navigation support
+- Form validation
 
-## Accessibility Features
+## Project Structure
 
-- Semantic HTML5 elements.
-- ARIA labels.
-- Keyboard navigation.
-- Visible focus indicators.
-- Form validation.
-- Accessible dialog using HTML dialog element.
+```text
+semantic-html5-dashboard/
+├── index.html
+├── pages/
+│   ├── users.html
+│   └── reports.html
+├── components/
+│   └── README.md
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── docs/
+│   └── accessibility-report.md
+└── README.md
+```
 
-The components are implemented in index.html
-and documented here for future reuse.
+## Accessibility Standards
+- Semantic HTML5 structure
+- Proper form labels
+- ARIA landmarks and accessible names
+- Keyboard focus indicators
+- Skip navigation link
+- Table captions and column headers
+- Native HTML form validation
+- Responsive layout
+
+## HTML Validation
+All three HTML pages were checked using the W3C Nu HTML Checker.
+
+Validation evidence screenshots are included in the project documentation.
+
+## How to Run
+1. Clone the repository.
+2. Open the project folder.
+3. Open `index.html` in a web browser.
+4. Navigate through Dashboard, Users, and Reports.
+
+## Conclusion
+This project demonstrates semantic HTML5 implementation and accessible component architecture for an enterprise dashboard.
