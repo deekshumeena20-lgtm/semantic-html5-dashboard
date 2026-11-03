@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessible enterprise administration dashboard">
+  <title>Enterprise Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>Enterprise Dashboard</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Dashboard</a>
+      <a href="pages/users.html">Users</a>
+      <a href="pages/reports.html">Reports</a>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside aria-label="Sidebar navigation">
+      <h2>Menu</h2>
+      <nav aria-label="Sidebar menu">
+        <ul>
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="pages/users.html">Manage Users</a></li>
+          <li><a href="pages/reports.html">Reports</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="main-content">
+      <section aria-labelledby="overview-heading">
+        <h2 id="overview-heading">Dashboard Overview</h2>
+
+        <div class="cards">
+          <article>
+            <h3>Total Users</h3>
+            <p>1,250</p>
+          </article>
+
+          <article>
+            <h3>Active Projects</h3>
+            <p>24</p>
+          </article>
+
+          <article>
+            <h3>Pending Tasks</h3>
+            <p>18</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="users-heading">
+        <h2 id="users-heading">Recent Users</h2>
+
+        <div class="table-container">
+          <table>
+            <caption>Recently registered users</caption>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Arun</td>
+                <td>arun@example.com</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Priya</td>
+                <td>priya@example.com</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>Rahul</td>
+                <td>rahul@example.com</td>
+                <td>Active</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="form-heading">
+        <h2 id="form-heading">Add New User</h2>
+
+        <form id="user-form">
+          <fieldset>
+            <legend>User Information</legend>
+
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text"
+              autocomplete="name" required minlength="3">
+
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email"
+              autocomplete="email" required>
+
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+              <option value="">Select a role</option>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+            </select>
+
+            <button type="submit">Add User</button>
+          </fieldset>
+        </form>
+        <p id="form-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section aria-labelledby="dialog-heading">
+        <h2 id="dialog-heading">Dialog Example</h2>
+        <button type="button" id="open-dialog">Open Information</button>
+
+        <dialog id="info-dialog" aria-labelledby="dialog-title">
+          <h3 id="dialog-title">Dashboard Information</h3>
+          <p>This is an accessible HTML dialog example.</p>
+          <button type="button" id="close-dialog">Close</button>
+        </dialog>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Enterprise Dashboard. All rights reserved.</p>
+  </footer>
+</body>
+</html>
